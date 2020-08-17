@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Данный сайт поможет Вам ознакомиться с услугами ArtLab">
+  <title>ArtLab</title>
+  <link rel="preload" href="fonts/opensans300.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensans300.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="fonts/opensans300italic.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensans300italic.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="fonts/opensans400.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensans400.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="fonts/opensans700.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/opensans700.woff" as="font" type="font/woff" crossorigin="">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <a class="header__link" aria-label="Ссылка на главную страницу">
+        <svg class="header__logo" width="124" height="113">
+          <use xlink:href="img/sprite.svg#logo-main"></use>
+        </svg>
+      </a>
+      <nav class="nav nav--nojs">
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">Кнопка меню</span>
+        </button>
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active">
+            <a class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Тарифы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="nav__contacts">
+          <a class="nav__phone" href="tel:88005555555" aria-label="Позвонить в ArtLab">
+            <svg width="32" height="32">
+              <use xlink:href="img/sprite.svg#logo-phone"></use>
+            </svg>
+          </a>
+          <a class="nav__email" href="mailto:artlab@mail.ru" aria-label="Написать в ArtLab">
+            <svg width="30" height="22">
+              <use xlink:href="img/sprite.svg#logo-email"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="intro">
+      <div class="intro__container">
+        <h1 class="visually-hidden">Artlab</h1>
+        <ul class="intro__list">
+          <li class="intro__item">
+            <picture>
+              <source srcset="img/business-tablet.jpg" media="(max-width: 1199px)">
+              <img src="img/business.jpg" width="302" height="360" alt="Пример работы ArtLab">
+            </picture>
+          </li>
+          <li class="intro__item">
+            <picture>
+              <source srcset="img/corporate-tablet.jpg" media="(max-width: 1199px)">
+              <img src="img/corporate.jpg" width="301" height="433" alt="Пример работы ArtLab">
+            </picture>
+          </li>
+          <li class="intro__item">
+            <picture>
+              <source srcset="img/bestapp-tablet.jpg" media="(max-width: 1199px)">
+              <img src="img/bestapp.jpg" width="295" height="512" alt="Пример работы ArtLab">
+            </picture>
+          </li>
+          <li class="intro__item">
+            <picture>
+              <source srcset="img/consulting-tablet.jpg" media="(max-width: 1199px)">
+              <img src="img/consulting.jpg" width="301" height="433" alt="Пример работы ArtLab">
+            </picture>
+          </li>
+          <li class="intro__item">
+            <picture>
+              <source srcset="img/provider-tablet.jpg" media="(max-width: 1199px)">
+              <img src="img/provider.jpg" width="302" height="360" alt="Пример работы ArtLab">
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="tariffs">
+      <div class="tariffs__container">
+        <h2 class="tariffs__main-title">Скажи Привет ARTLAB!</h2>
+        <span class="tariffs__main-description">Мы предлагаем несколько вариантов для бизнеса</span>
+        <ul class="tariffs__main-list">
+          <li class="tariffs__main-item">
+            <h3 class="tariffs__item-title">Пакет <b>город</b></h3>
+            <svg class="tariffs__logo" width="136" height="120">
+              <use xlink:href="img/sprite.svg#logo-city"></use>
+            </svg>
+            <span class="tariffs__item-description">Для растущего бизнеса</span>
+            <ul class="tariffs__services-list">
+              <li class="tariffs__services-item">Business card website</li>
+              <li class="tariffs__services-item">Acess control system</li>
+              <li class="tariffs__services-item">IT consulting</li>
+              <li class="tariffs__services-item">Shared files</li>
+              <li class="tariffs__services-item">UP Camera</li>
+              <li class="tariffs__services-item">Corporate mail</li>
+              <li class="tariffs__services-item">Backup</li>
+            </ul>
+          </li>
+          <li class="tariffs__main-item">
+            <h3 class="tariffs__item-title tariffs__item-title--country">Пакет <b>страна</b></h3>
+            <svg class="tariffs__logo tariffs__logo--country" width="136" height="129">
+              <use xlink:href="img/sprite.svg#logo-country"></use>
+            </svg>
+            <span class="tariffs__item-description">Для среднего бизнеса</span>
+            <ul class="tariffs__services-list">
+              <li class="tariffs__services-item">Business card website</li>
+              <li class="tariffs__services-item">Acess control system</li>
+              <li class="tariffs__services-item">IT consulting</li>
+              <li class="tariffs__services-item">Shared files</li>
+              <li class="tariffs__services-item">UP Camera</li>
+              <li class="tariffs__services-item">Corporate mail</li>
+              <li class="tariffs__services-item">Backup</li>
+            </ul>
+          </li>
+          <li class="tariffs__main-item">
+            <h3 class="tariffs__item-title tariffs__item-title--planet">Пакет <b>планета</b></h3>
+            <svg class="tariffs__logo" width="104" height="105">
+              <use xlink:href="img/sprite.svg#logo-planet"></use>
+            </svg>
+            <span class="tariffs__item-description">Для крупного бизнеса</span>
+            <ul class="tariffs__services-list">
+              <li class="tariffs__services-item">Business card website</li>
+              <li class="tariffs__services-item">Acess control system</li>
+              <li class="tariffs__services-item">IT consulting</li>
+              <li class="tariffs__services-item">Shared files</li>
+              <li class="tariffs__services-item">UP Camera</li>
+              <li class="tariffs__services-item">Corporate mail</li>
+              <li class="tariffs__services-item">Backup</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="quote">
+      <div class="quote__container">
+        <blockquote class="quote__box">
+          <p class="quote__text">"Мысль, которая не опасна, не достойна называться мыслью."</p>
+        </blockquote>
+        <span class="quote__author">~Оскар Уайльд.</span>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="projects__container">
+        <h2 class="projects__title">Наши Проекты</h2>
+        <span class="projects__text">Здесь всё, чем мы живем :)</span>
+        <ul class="projects__list">
+          <li class="projects__item">
+            <img src="img/project.jpg" width="262" height="343" alt="Пример проекта">
+            <h3 class="projects__item-title">Крастер</h3>
+            <span class="projects__description">Интернет банк</span>
+            <a class="projects__link" href="#" aria-label="Ссылка на проект">
+              <svg width="25" height="18">
+                <use xlink:href="img/sprite.svg#logo-arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="projects__item">
+            <img src="img/project.jpg" width="262" height="343" alt="Пример проекта">
+            <h3 class="projects__item-title">Крастер</h3>
+            <span class="projects__description">Интернет банк</span>
+            <a class="projects__link" href="#" aria-label="Ссылка на проект">
+              <svg width="25" height="18">
+                <use xlink:href="img/sprite.svg#logo-arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="projects__item">
+            <img src="img/project.jpg" width="262" height="343" alt="Пример проекта">
+            <h3 class="projects__item-title">Крастер</h3>
+            <span class="projects__description">Интернет банк</span>
+            <a class="projects__link" href="#" aria-label="Ссылка на проект">
+              <svg width="25" height="18">
+                <use xlink:href="img/sprite.svg#logo-arrow"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__container">
+        <ul class="about__list">
+          <li class="about__item">
+            <h3 class="about__title">Про artlab</h3>
+            <p class="about__text">
+              Неважно, новичок вы или эксперт, ARTLABпокажется Вам очень простым и интуитивно понятным решением в
+              бизнесе. Являетесь ли вы растущим,средним или крупным игроком ARTLAB покажет вам, как хорошо выглядеть и
+              противостоять конкурентам сегодня, завтра, ...
+            </p>
+          </li>
+          <li class="about__item">
+            <h3 class="about__title">Про artlab</h3>
+            <p class="about__text">
+              Неважно, новичок вы или эксперт, ARTLABпокажется Вам очень простым и интуитивно понятным решением в
+              бизнесе. Являетесь ли вы растущим,средним или крупным игроком ARTLAB покажет вам, как хорошо выглядеть и
+              противостоять конкурентам сегодня, завтра, ...
+            </p>
+          </li>
+          <li class="about__item">
+            <h3 class="about__title">Про artlab</h3>
+            <p class="about__text">
+              Неважно, новичок вы или эксперт, ARTLABпокажется Вам очень простым и интуитивно понятным решением в
+              бизнесе. Являетесь ли вы растущим,средним или крупным игроком ARTLAB покажет вам, как хорошо выглядеть и
+              противостоять конкурентам сегодня, завтра, ...
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <span class="footer__text">сделано в <b>artlab</b></span>
+      <img src="" alt="">
+      <a class="footer__link" href="">www.<b>artlab</b>.ws</a>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
